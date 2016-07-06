@@ -1,0 +1,38 @@
+<header>
+  <div class="center">
+    <div class="site-logo">
+      <h1><a [routerLink]="['/Home']">Angular 2 <span>site</span> App</a></h1>
+    </div>
+    <div id="mobile_sec">
+      <div class="mobile">
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-times"></i>
+      </div>
+      <div class="menumobile">
+        <nav class="navigation">
+          <ul>
+            <li class="active">
+              <a [routerLink]="['/home']">Home</a>
+              <span class="menu-item-bg"></span>
+            </li>
+            <li>
+              <a [routerLink]="['/about']">About</a>
+              <span class="menu-item-bg"></span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</header>
+
+<div id="container" class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<footer>
+  <div class="cntr">
+    <p>© 2016 Iryna Patsihova.</p>
+  </div>
+</footer>
